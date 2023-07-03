@@ -19,13 +19,16 @@
         <router-link class="nav-link" to="/about">About</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/product">Product</router-link>
+        <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/admin">Admin</router-link>
+        <router-link class="nav-link" to="/admin">Resume</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/checkout">Checkout</router-link>
+        <router-link class="nav-link" to="/testimonials">Testimonials</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link class="nav-link" to="/contact">Contact</router-link>
       </li>
     </ul>
   </div>

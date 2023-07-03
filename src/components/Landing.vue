@@ -4,9 +4,7 @@
         <p>Welcome To My Personal Portfolio
           <br> Click the button below to find out more about me
         </p>
-        <button id="abtbtn">
-            <router-link class="abtbtn" to="/about">Read More</router-link>
-        </button>
+            <router-link class="abtbtn" to="/about"><button class="abtbtn">Read More</button></router-link>
       </div>
 </template>
 
@@ -36,7 +34,7 @@ p{
     align-items: center;
     padding: 30px;
 }
-#abtbtn{
+.abtbtn{
     background-color: #bee9e8;
     border: #bee9e8;
     border-radius: 5px;

@@ -10,7 +10,7 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="nav-links">
+  <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <router-link class="nav-link" to="/">Home</router-link>
@@ -22,7 +22,7 @@
         <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/admin">Resume</router-link>
+        <router-link class="nav-link" to="/resume">Resume</router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/testimonials">Testimonials</router-link>
@@ -61,6 +61,7 @@
 
 .nav-link {
   color: grey;
+  font-weight: 700;
 }
 .nav-link:hover{
   color: #5fa8d3;

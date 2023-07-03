@@ -3,10 +3,11 @@
         <div class="row my-3"></div>
         <h1>Testimonials</h1>
     </div>
+    <br>
     <div class="container">
         <div class="row justify-content-center gap-5">
-            <div class="card p-0" v-for="humans in testimonials" style="width: 15rem;" :key="humans.id">
-            <img :src="humans.image" class="card-img-top" :alt="humans.name">
+            <div class="card" v-for="humans in testimonials" style="width: 20rem;" :key="humans.id">
+            <img :src="humans.image" id="img" class="card-img-top" :alt="humans.name" loading="lazy">
             <div class="card-body">
                 <h4 class="card-head">
                     {{ humans.name }}
@@ -34,5 +35,22 @@
 </script>
 
 <style scoped>
+#img{
+    height: min-content;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.card-head{
+    color: #62B6CB;
+}
+.card-text{
+    color: #5FA8D3;
+}
+.card{
+    background-color: #1B4965;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
 
 </style>

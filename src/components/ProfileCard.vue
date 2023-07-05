@@ -1,13 +1,15 @@
 <template>
     <div>
-        <div class="row my-3"></div>
+        <div class="row my-3">
         <h1>Testimonials</h1>
     </div>
     <br>
     <div class="container">
         <div class="row justify-content-center gap-5">
-            <div class="card" v-for="humans in testimonials" style="width: 20rem;" :key="humans.id">
+        <div class="card" v-for="humans in testimonials" style="width: 20rem;" :key="humans.id">
+        <div class="profile">    
             <img :src="humans.image" id="img" class="card-img-top" :alt="humans.name" loading="lazy">
+        </div>
             <div class="card-body">
                 <h4 class="card-head">
                     {{ humans.name }}
@@ -19,6 +21,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -51,6 +54,14 @@
     background-color: #1B4965;
     border-radius: 20px;
     margin-bottom: 1rem;
+}
+.profile{
+    width: 100%;
+    height: 75%;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
 }
 
 </style>

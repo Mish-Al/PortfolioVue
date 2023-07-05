@@ -17,4 +17,5 @@ import ProfileCard from '@/components/ProfileCard.vue'
 
 <style scoped>
 
+
 </style>

@@ -23,5 +23,10 @@ import Footer from '@/components/Footer.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+body{
+    background-image: url(https://i.postimg.cc/8cgMx886/Untitled-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 </style>

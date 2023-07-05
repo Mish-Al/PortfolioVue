@@ -119,6 +119,7 @@ export default {
 .container {
   width: 100% !important;
 }
+
 .card-head {
   color: #62b6cb;
 }

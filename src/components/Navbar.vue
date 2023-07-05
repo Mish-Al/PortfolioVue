@@ -24,7 +24,7 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <a class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://i.postimg.cc/8cM31QCS/Screenshot-2023-07-01-122816.png" alt="logo"></a>
             <button
               type="button"
               class="btn-close"
@@ -34,26 +34,26 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/">Home</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/about">About</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/projects"
                   >Projects</router-link
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/resume">Resume</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/testimonials"
                   >Testimonials</router-link
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link" to="/contact"
                   >Contact</router-link
                 >
@@ -79,6 +79,15 @@ export default {};
 #logo {
   height: 6rem;
   background-color: #cae9ff;
+}
+.offcanvas-body{
+  background-color: #ddf1f4;
+}
+.offcanvas-header{
+  background-color: #ddf1f4;
+}
+img{
+  height: 6rem;
 }
 #navbarNav {
   display: flex;

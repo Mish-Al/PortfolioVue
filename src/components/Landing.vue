@@ -1,4 +1,5 @@
 <template>
+    <div class="res">
     <div class="landing">
         <h1>My name is Mish-Al Taliep</h1>
         <p>Welcome To My Personal Portfolio
@@ -6,6 +7,7 @@
         </p>
             <router-link class="abtbtn" to="/about"><button class="abtbtn">Read More</button></router-link>
       </div>
+    </div>
 </template>
 
 <script>
@@ -41,12 +43,13 @@ p{
     height: 3rem;
 }
 .landing{
-    background-image: url(https://i.postimg.cc/8cgMx886/Untitled-design.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 64vh;
+    height: 61vh;
     border-radius: 5px;
     color: #cae9ff;
+}
+.res{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 

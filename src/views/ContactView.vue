@@ -1,16 +1,16 @@
 <template>
-    <div>
-        <Contact/>
-    </div>
+  <div>
+    <Contact/>
+  </div>
 </template>
 
 <script>
-import Contact from '@/components/Contact.vue';
-    export default {
-        components: {
-            Contact
-        }
-    }
+import Contact from "@/components/Contact.vue";
+export default {
+  components: {
+    Contact,
+  },
+};
 </script>
 
 <style scoped>

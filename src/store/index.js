@@ -1,6 +1,6 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
-const dataURL = 'https://mish-al.github.io/portfolioServer/mishData.json';
+const dataURL = "https://mish-al.github.io/portfolioServer/mishData.json";
 
 export default createStore({
   state: {
@@ -8,36 +8,34 @@ export default createStore({
     education: null,
     experience: null,
     projects: null,
-    testimonials: null
+    testimonials: null,
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
     setSkills(state, skills) {
-      state.skills = skills
+      state.skills = skills;
     },
     setEducation(state, education) {
-      state.education = education
+      state.education = education;
     },
     setExperience(state, experience) {
-      state.experience = experience
+      state.experience = experience;
     },
     setProjects(state, projects) {
-      state.projects = projects
+      state.projects = projects;
     },
     setTestimonials(state, testimonials) {
-      state.testimonials = testimonials
-    }
+      state.testimonials = testimonials;
+    },
   },
   actions: {
     async fetchSkills(context) {
       try {
         let res = await fetch(dataURL);
         let { skills } = await res.json();
-  
-        context.commit('setSkills', skills);
-      }
-      catch (e) {
+
+        context.commit("setSkills", skills);
+      } catch (e) {
         alert(e.message);
       }
     },
@@ -45,10 +43,9 @@ export default createStore({
       try {
         let res = await fetch(dataURL);
         let { education } = await res.json();
-  
-        context.commit('setEducation', education);
-      }
-      catch (e) {
+
+        context.commit("setEducation", education);
+      } catch (e) {
         alert(e.message);
       }
     },
@@ -56,10 +53,9 @@ export default createStore({
       try {
         let res = await fetch(dataURL);
         let { experience } = await res.json();
-  
-        context.commit('setExperience', experience);
-      }
-      catch (e) {
+
+        context.commit("setExperience", experience);
+      } catch (e) {
         alert(e.message);
       }
     },
@@ -67,10 +63,9 @@ export default createStore({
       try {
         let res = await fetch(dataURL);
         let { projects } = await res.json();
-  
-        context.commit('setProjects', projects);
-      }
-      catch (e) {
+
+        context.commit("setProjects", projects);
+      } catch (e) {
         alert(e.message);
       }
     },
@@ -78,13 +73,12 @@ export default createStore({
       try {
         let res = await fetch(dataURL);
         let { testimonials } = await res.json();
-  
-        context.commit('setTestimonials', testimonials);
-      }
-      catch (e) {
+
+        context.commit("setTestimonials", testimonials);
+      } catch (e) {
         alert(e.message);
       }
-    }
+    },
   },
-  modules: {}
+  modules: {},
 });

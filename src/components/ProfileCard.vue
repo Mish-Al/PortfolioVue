@@ -4,7 +4,9 @@
       <h1>Testimonials</h1>
     </div>
     <br />
-    <div class="container">
+    <div
+      class="container animate__animated animate__bounceIn animate__delay-1s 1s"
+    >
       <div class="row justify-content-center gap-5">
         <div
           class="card"
@@ -21,7 +23,7 @@
               loading="lazy"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body p-4">
             <h4 class="card-head">
               {{ humans.name }}
             </h4>
@@ -83,6 +85,7 @@ export default {
 .profile img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .profile img {

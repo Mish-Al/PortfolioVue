@@ -1,56 +1,69 @@
 <template>
-    <div class="res">
+  <div class="res">
     <div class="landing">
-        <h1>My name is Mish-Al Taliep</h1>
-        <p>Welcome To My Personal Portfolio
-          <br> Click the button below to find out more about me
-        </p>
-            <router-link class="abtbtn" to="/about"><button class="abtbtn">Read More</button></router-link>
+      <h1 class="animate__animated animate__fadeInDown animate__delay-1s 1s">
+        My name is Mish-Al Taliep
+      </h1>
+      <p class="animate__animated animate__fadeInDown animate__delay-2s 2s">
+        An Aspiring Front-End Developer <br />
+        Click below to find out more about me
+      </p>
+      <div class="animate__animated animate__bounceIn animate__delay-3s 3s">
+        <router-link class="abtbtn" to="/about"
+          ><button class="abtbtn">Read More</button></router-link
+        >
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style scoped>
-.abtbtn{
-    text-decoration: none;
-    color: grey;
-    background-color: #bee9e8;
+.abtbtn {
+  text-decoration: none;
+  color: grey;
+  background-color: #bee9e8;
+  cursor: pointer;
 }
-h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px
+p {
+  font-size: x-large;
+  color: #1b4965;
 }
-p{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+.abtbtn:hover {
+  background-color: grey;
+  color: #bee9e8;
+  border: 1px solid #1b4965;
 }
-.abtbtn{
-    background-color: #bee9e8;
-    border: #bee9e8;
-    border-radius: 5px;
-    height: 3rem;
+h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
-.landing{
-    height: 61vh;
-    border-radius: 5px;
-    color: #cae9ff;
+p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
-.res{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.abtbtn {
+  background-color: #bee9e8;
+  border: #bee9e8;
+  border-radius: 5px;
+  height: 3rem;
 }
-
-
+.landing {
+  height: 61vh;
+  border-radius: 5px;
+  color: #cae9ff;
+}
+.res {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 </style>

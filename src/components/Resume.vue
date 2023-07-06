@@ -2,10 +2,12 @@
   <div>
     <br />
     <div class="section-heading">
-      <h2>Education</h2>
+      <h2 class>Education</h2>
     </div>
     <br />
-    <div class="container">
+    <div
+      class="container animate__animated animate__zoomInUp animate__delay-1s 1s"
+    >
       <div class="row justify-content-center gap-2">
         <div
           class="card"
@@ -42,7 +44,9 @@
       <h2>Skills</h2>
     </div>
     <br />
-    <div class="container">
+    <div
+      class="container animate__animated animate__zoomInUp animate__delay-2s 2s"
+    >
       <div class="row justify-content-center gap-2">
         <div
           class="card"
@@ -69,7 +73,9 @@
       <h2>Work Experience</h2>
     </div>
     <br />
-    <div class="container">
+    <div
+      class="container animate__animated animate__zoomInUp animate__delay-3s 3s"
+    >
       <div class="row justify-content-center gap-2">
         <div
           class="card"
@@ -143,12 +149,12 @@ export default {
 #icons {
   color: #ddf1f4;
 }
-#img{
-    height: 5rem;
-    width: 5rem;
+#img {
+  height: 5rem;
+  width: 5rem;
 }
-.section-heading{
-    text-decoration: underline;
-    color: #cae9ff;
+.section-heading {
+  text-decoration: underline;
+  color: #cae9ff;
 }
 </style>

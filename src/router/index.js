@@ -1,42 +1,42 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue')
+    path: "/about",
+    name: "about",
+    component: () => import("../views/AboutView.vue"),
   },
   {
-    path: '/projects',
-    name: 'projects',
-    component: () => import('../views/ProjectView.vue')
+    path: "/projects",
+    name: "projects",
+    component: () => import("../views/ProjectView.vue"),
   },
   {
-    path: '/resume',
-    name: 'resume',
-    component: () => import('../views/ResumeView.vue')
+    path: "/resume",
+    name: "resume",
+    component: () => import("../views/ResumeView.vue"),
   },
   {
-    path: '/testimonials',
-    name: 'testimonials',
-    component: () => import('../views/TestimonialView.vue')
+    path: "/testimonials",
+    name: "testimonials",
+    component: () => import("../views/TestimonialView.vue"),
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('../views/ContactView.vue')
-  }
-]
+    path: "/contact",
+    name: "contact",
+    component: () => import("../views/ContactView.vue"),
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

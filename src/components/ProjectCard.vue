@@ -3,7 +3,9 @@
     <div class="project-head">
       <h1>Projects</h1>
     </div>
-    <div class="container">
+    <div
+      class="container animate__animated animate__backInDown animate__delay-1s 1s"
+    >
       <div class="row justify-content-center gap-5">
         <div
           class="card"
@@ -27,7 +29,6 @@
 </template>
 
 
-
 <script>
 export default {
   computed: {
@@ -47,18 +48,20 @@ export default {
   color: #cae9ff;
   padding-bottom: 1rem;
 }
-.proj{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.proj {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.row {
+/* .row {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 .card {
+  display: flex;
+  justify-content: center;
   background-color: #1b4965;
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -77,6 +80,11 @@ button {
   height: 3rem;
   margin: 1rem;
 }
+button:hover{
+  background-color: #62b6cb;
+  color: #1b4965;
+  border: 1px solid #bee9e8 ;
+}
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -84,5 +92,4 @@ button {
 .card-head {
   color: #62b6cb;
 }
-
 </style>

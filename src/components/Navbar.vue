@@ -24,7 +24,11 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <a class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://i.postimg.cc/8cM31QCS/Screenshot-2023-07-01-122816.png" alt="logo"></a>
+            <a class="offcanvas-title" id="offcanvasNavbarLabel"
+              ><img
+                src="https://i.postimg.cc/8cM31QCS/Screenshot-2023-07-01-122816.png"
+                alt="logo"
+            /></a>
             <button
               type="button"
               class="btn-close"
@@ -76,17 +80,20 @@ export default {};
   border: 2px solid #1b4965;
   border-radius: 5px;
 }
+.navbar-toggler {
+  border: 2px ridge #1b4965;
+}
 #logo {
   height: 6rem;
   background-color: #cae9ff;
 }
-.offcanvas-body{
+.offcanvas-body {
   background-color: #ddf1f4;
 }
-.offcanvas-header{
+.offcanvas-header {
   background-color: #ddf1f4;
 }
-img{
+img {
   height: 6rem;
 }
 #navbarNav {

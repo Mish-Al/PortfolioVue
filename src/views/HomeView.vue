@@ -1,18 +1,16 @@
 <template>
   <div class="home">
-    <Landing/>
+    <Landing />
   </div>
 </template>
 
 <script>
-
-import Landing from '@/components/Landing.vue'
+import Landing from "@/components/Landing.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    Landing
-    
-  }
-}
+    Landing,
+  },
+};
 </script>

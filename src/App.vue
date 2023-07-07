@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
 }
 
-::-webkit-scrollbar{
-  display:none;
+::-webkit-scrollbar {
+  display: none;
 }
 </style>

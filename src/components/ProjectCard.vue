@@ -80,10 +80,10 @@ button {
   height: 3rem;
   margin: 1rem;
 }
-button:hover{
+button:hover {
   background-color: #62b6cb;
   color: #1b4965;
-  border: 1px solid #bee9e8 ;
+  border: 1px solid #bee9e8;
 }
 .card:hover {
   transform: scale(1.05);

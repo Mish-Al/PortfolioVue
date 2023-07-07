@@ -90,6 +90,4 @@ img {
     border-radius: 43% 57% 30% 70% / 62% 32% 68% 38%;
   }
 }
-@media screen and (max-width: ) {
-}
 </style>

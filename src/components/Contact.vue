@@ -74,7 +74,7 @@
           <h2>Contact Details</h2>
           <h4 class="phone"><i class="bi bi-telephone"></i>Phone : +27 65 859 9211</h4>
           <h4 class="mail"><i class="bi bi-envelope-at"></i>mtaliep.lifechoices@gmail.com</h4>
-          <h4 class="place"><i class="bi bi-envelope-at"></i>Address : 310 Imam Haron Road, Lansdowne Cape Town 7780</h4>
+          <h4 class="place"><i class="bi bi-geo-alt"></i>Address : 310 Imam Haron Road, Lansdowne Cape Town 7780</h4>
         </div>
       </div>
         </div>

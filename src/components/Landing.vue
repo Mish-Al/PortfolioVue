@@ -1,5 +1,5 @@
 <template>
-  <div class="res">
+  <div class="res d-flex justify-content-center align-items-center h-100">
     <div class="landing">
       <h1 class="animate__animated animate__fadeInDown animate__delay-1s 1s">
         My name is Mish-Al Taliep

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex justify-content-center align-items-center h-100 flex-column" >
     <div class="test-head">
       <h1>Testimonials</h1>
     </div>

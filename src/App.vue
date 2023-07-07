@@ -17,6 +17,9 @@ export default {
 
 <style>
 #app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto minmax(100vh, 1fr);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

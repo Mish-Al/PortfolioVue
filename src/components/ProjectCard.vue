@@ -1,27 +1,25 @@
 <template>
-  <div class="proj">
-    <div class="project-head">
-      <h1>Projects</h1>
-    </div>
-    <div
-      class="container animate__animated animate__backInDown animate__delay-1s 1s"
-    >
-      <div class="row justify-content-center gap-5">
-        <div
-          class="card"
-          v-for="ideas in projects"
-          style="width: 20rem"
-          :key="ideas.id"
-        >
-          <div class="card-body">
-            <h4 class="card-head">
-              {{ ideas.name }}
-            </h4>
-            <a :href="ideas.link" class="pro-btn"><button>Github</button></a>
-            <a :href="ideas.website" class="pro-btn"
-              ><button>Live Server</button></a
-            >
-          </div>
+  <div class="project-head">
+    <h1>Projects</h1>
+  </div>
+  <div
+    class="container animate__animated animate__backInDown animate__delay-1s 1s"
+  >
+    <div class="row justify-content-center gap-5">
+      <div
+        class="card"
+        v-for="ideas in projects"
+        style="width: 20rem"
+        :key="ideas.id"
+      >
+        <div class="card-body">
+          <h4 class="card-head">
+            {{ ideas.name }}
+          </h4>
+          <a :href="ideas.link" class="pro-btn"><button>Github</button></a>
+          <a :href="ideas.website" class="pro-btn"
+            ><button>Live Server</button></a
+          >
         </div>
       </div>
     </div>

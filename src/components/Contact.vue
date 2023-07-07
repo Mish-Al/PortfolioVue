@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div
       class="animate__animated animate__animated animate__zoomIn animate__delay-1s 1s"
     >
@@ -29,6 +29,8 @@
                 class="form-control"
                 id="exampleFormControlInput1"
                 required
+                oninvalid="this.setCustomValidity('Input Name')"
+                oninput="this.setCustomValidity('')"
               />
             </div>
             <div>
@@ -41,6 +43,8 @@
                 class="form-control"
                 id="exampleFormControlInput1"
                 required
+                oninvalid="this.setCustomValidity('Input Surname')"
+                oninput="this.setCustomValidity('')"
               />
             </div>
             <div>
@@ -53,6 +57,8 @@
                 class="form-control"
                 id="exampleFormControlInput1"
                 required
+                oninvalid="this.setCustomValidity('Input Email')"
+                oninput="this.setCustomValidity('')"
               />
             </div>
             <label for="exampleFormControlTextarea1" class="form-label"
@@ -71,15 +77,22 @@
             </div>
           </form>
           <div class="details pb-5">
-          <h2>Contact Details</h2>
-          <h4 class="phone"><i class="bi bi-telephone"></i>Phone : +27 65 859 9211</h4>
-          <h4 class="mail"><i class="bi bi-envelope-at"></i>mtaliep.lifechoices@gmail.com</h4>
-          <h4 class="place"><i class="bi bi-geo-alt"></i>Address : 310 Imam Haron Road, Lansdowne Cape Town 7780</h4>
-        </div>
-      </div>
+            <h2>Contact Details</h2>
+            <h4 class="phone">
+              <i class="bi bi-telephone"></i>Phone : +27 65 859 9211
+            </h4>
+            <h4 class="mail">
+              <i class="bi bi-envelope-at"></i>mtaliep.lifechoices@gmail.com
+            </h4>
+            <h4 class="place">
+              <i class="bi bi-geo-alt"></i>Address : 310 Imam Haron Road,
+              Lansdowne Cape Town 7780
+            </h4>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -119,14 +132,14 @@ export default {};
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-.details {
+.col {
   border-radius: 20px;
   margin-bottom: 1rem;
   box-shadow: 0 6px 10px rgba(119, 34, 34, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow;
 }
-.details:hover {
+.col:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -142,16 +155,5 @@ h1 {
 h4 {
   color: #cae9ff;
 }
-@media screen and (max-width: 500) {
-  .details {
-    display: grid;
-    justify-content: last baseline;
-  }
-  .conform {
-    display: grid;
-    justify-content: first baseline;
-  }
-}
-
 
 </style>

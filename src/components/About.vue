@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div class="card" style="display: flex; justify-content: center;align-items: center;">
+  <div class="everything d-flex justify-content-center align-items-center h-100">
+    <div class="card style=display: flex; justify-content: center;align-items: center;">
       <div class="row g-0">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card-body">
-            <h5 class="about-heading">About Me</h5>
-            <p class="about-content">
+            <h3 class="about-heading animate__animated animate__animated animate__fadeInDown animate__delay-1s 1s">About Me</h3>
+            <p class="about-content animate__animated animate__animated animate__fadeInLeft animate__delay-1s 1s">
               I am Mish-Al Taliep, a 21 year old from Belgravia, Cape Town.
               <br />
               I graduated from high school with little to no knowledge on IT or
@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6 animate__animated animate__animated animate__bounceIn animate__delay-1s 1s">
           <img
             src="https://i.postimg.cc/9QSyv4vF/IMG-4594.jpg"
             class="img-fluid"
@@ -55,19 +55,20 @@ export default {};
 }
 .about-content {
   color: #1b4965;
-  font-size: 1.5rem;
-  padding: 20px;
+  font-size: 1.3rem;
 }
+
 .col-md-8 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 img {
+  margin: auto;
   display: flex;
   object-fit: cover;
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   border: 7px solid #cae9ff;
   border-radius: 61% 39% 65% 35% / 38% 62% 38% 62%;
   background-image: linear-gradient(45deg, #1b4965, #5fa8d3 100%);
@@ -88,6 +89,11 @@ img {
   }
   100% {
     border-radius: 43% 57% 30% 70% / 62% 32% 68% 38%;
+  }
+}
+@media screen and (width < 900px) {
+  .everything{
+    flex-direction: column;
   }
 }
 </style>

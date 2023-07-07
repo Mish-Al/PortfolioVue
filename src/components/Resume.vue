@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="d-flex justify-content-center align-items-center h-100 flex-column">
     <br />
-    <div class="section-heading">
+    <div class="section-heading animate__animated animate__fadeInUp animate__delay-1s 1s">
       <h2 class>Education</h2>
     </div>
     <br />
     <div
-      class="container animate__animated animate__zoomInUp animate__delay-1s 1s"
+      class="container animate__animated animate__bounceInUp animate__delay-1s 1s"
     >
       <div class="row justify-content-center gap-2">
         <div
@@ -40,12 +40,12 @@
       </div>
     </div>
     <br />
-    <div class="section-heading">
+    <div class="section-heading  animate__animated animate__fadeInUp animate__delay-2s 2s">
       <h2>Skills</h2>
     </div>
     <br />
     <div
-      class="container animate__animated animate__zoomInUp animate__delay-2s 2s"
+      class="container animate__animated animate__bounceInUp animate__delay-2s 2s"
     >
       <div class="row justify-content-center gap-2">
         <div
@@ -69,12 +69,12 @@
       </div>
     </div>
     <br />
-    <div class="section-heading">
+    <div class="section-heading  animate__animated animate__fadeInUp animate__delay-3s 3s">
       <h2>Work Experience</h2>
     </div>
     <br />
     <div
-      class="container animate__animated animate__zoomInUp animate__delay-3s 3s"
+      class="container animate__animated animate__bounceInUp animate__delay-3s 3s"
     >
       <div class="row justify-content-center gap-2">
         <div
